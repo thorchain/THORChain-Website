@@ -1,853 +1,1080 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>THORCHAIN</title>
-    <link rel="icon" href="assets/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans" rel="stylesheet">
-    <link href="assets/css/connecting-dots.css" rel="stylesheet">
-    <link href="assets/css/thorchain.css" rel="stylesheet">
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <link href="assets/css/helper.css" rel="stylesheet">
-    <link href="assets/css/globe.css" rel="stylesheet">
-    <link href="assets/css/animations-ie-fix.css" rel="stylesheet">
-    <link href="assets/css/animations.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>THORCHAIN</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans" rel="stylesheet">
+  <link href="assets/css/connecting-dots.css" rel="stylesheet">
+  <link href="assets/css/thorchain.css" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link href="assets/css/helper.css" rel="stylesheet">
+  <link href="assets/css/globe.css" rel="stylesheet">
+  <link href="assets/css/animations-ie-fix.css" rel="stylesheet">
+  <link href="assets/css/animations.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
+
 </head>
 
-<body>
-    <nav id="mainNav" class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" style="max-width: 40%">
-                <img class="top-brand" src="assets/img/thorchain-white-text.svg">
-            </a>
-        </div>
-    </nav>
+<style>
+#mailget_signup_form *{font:normal normal 400 16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#383838}
+#mailget_signup_form{max-width:400px; width:100%;}
+#mailget_signup_form .mg-row{padding:6px}
+#mailget_signup_form label{display:block;margin-bottom:3px}
+#mailget_signup_form button,#mailget_signup_form input,#mailget_signup_form textarea{display:block;padding:4px;border:1px solid #bbb;border-radius:2px;width:100%;-webkit-appearance:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#mailget_signup_form button:focus,#mailget_signup_form input:focus,#mailget_signup_form textarea:focus{border-color:#23b7e5;outline:0}
+#mailget_signup_form input[type=submit]{background-color:rgba(51,255,153,1);color:#fff;border-color:#101921;cursor:pointer;font-weight:700;padding:5px;margin-top:12px;border-radius:2px}
+#mailget_signup_form input[type=submit]:hover{background-color:rgba(51,255,153,1)}
+#mailget_signup_form input[type=submit]:active{background-color:rgba(51,255,153,1)}
+#mailget_signup_form .mg-error{margin-left:8px;font-size:14px;color:#F79572;line-height:1}
+</style>
 
-    <section id="top">
-        <div class="container-fluid top-div min-h-50v"  id="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="row top-text" style="margin-top:100px">
-                            <h1>The Lightning-Fast Decentralised Exchange Protocol</h1>
-                            <h5 class="py-15px">Powering fast and low-fee digital asset swaps; enabling instant and
-                                liquid
-                                payments.</h5>
-                            <p class="desc-paragraph">The THORChain ecosystem is built for a singular purpose: to
-                                create
-                                a massive payment network for payment freedom. In the matured vision it will enable
-                                anyone
-                                to pay for anything in any currency, with continuous liquidity, near-instant finality
-                                and
-                                complete self-sovereignty.</p>
-                        </div>
-                        <div class="row text-left">
-                            <div class="col-12" style="font-size: 1.5rem">
-                                <a href="https://twitter.com/thorchain_org" target="_blank">
-                                    <i class="text-grey mx-10px fab fa-twitter"></i>
-                                </a>
-                                <a href="https://reddit.com/r/thorchain" target="_blank">
-                                    <i class="text-grey mx-10px fab fa-reddit"></i>
-                                </a>
-                                <a href="https://github.com/thorchain" target="_blank">
-                                    <i class="text-grey mx-10px fab fa-github"></i>
-                                </a>
-                                <a href="https://t.me/thorchain_org" target="_blank">
-                                    <i class="text-grey mx-10px fab fa-telegram-plane"></i>
-                                </a>
-                                <a href="https://medium.com/thorchain" target="_blank">
-                                    <i class="text-grey mx-10px fab fa-medium"></i>
-                                </a>
-                            </div>
-                            <div class="col-12 py-5">
-                                <a href="https://github.com/thorchain" target="_blank">
-                                    <button class="btn btn-thor">
-                                        VIEW DEVELOPMENT
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid min-h-60v" id="ecosystem">
-            <div class="container ecosystem-container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h1>THORCHAIN ECOSYSTEM</h1>
-                        <h5>A hybrid of emerging multi-layer technologies</h5>
-                        <div class="container pt-25px">
-                            <p class="desc-paragraph">THORChain will enhance and augment the entire crypto-currency and
-                                digital
-                                asset ecosystem; being completely chain-agnostic with fundamentals of compatibility,
-                                performance
-                                and upgradeability.
-                                <br><br> THORChain does not compete with any existing protocol or chain. Rather it is
-                                built
-                                to connect them all in one massively liquid, redundant and decentralised network. Pay
-                                with
-                                Bitcoin, instantly receive with Ethereum at the correct market price; THORChain
-                                provides
-                                the bridging protocol with the Rune token as the liquid settlement currency.
-                                <br><br> THORChain is not a Bitcoin replacement nor is it a smart contract platform. It
-                                is
-                                simply a lightning-fast decentralised exchange protocol.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row component-row my-30 text-left">
-                    <div class="container  text-center" style="justify-content: center">
-                        <a href="https://github.com/thorchain" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/thorchain.svg">
-                                    </span>THORCHAIN</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A multi-chain optimised for lightning-fast Layer 1 digital asset trading.</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/thorchain/Yggdrasil-Protocol" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/yggdrasil.svg">
-                                    </span>YGGDRASIL PROTOCOL</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A trust-minimized highly scalable sharding solution for THORChain.</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/thorchain/Flash-Network" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/flash.svg">
-                                    </span>FLASH NETWORK</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A Layer 2 Network for cross-network instant asset exchange.</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/thorchain/Bifrost-Protocol" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/bifrost.svg">
-                                    </span>BIFRÖST PROTOCOL</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A fully secured cross-chain bridge protocol for THORChain.</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/thorchain/ASGARDEX" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/asgardex.svg">
-                                    </span>ASGARDEX</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A fast and secure decentralised exchange built for THORChain.</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/thorchain/AEsir-Protocol" target="_blank">
-                            <div class="thorchain-component" style="display: inline-block;">
-                                <h4>
-                                    <span class="pr-10px">
-                                        <img src="assets/img/aesir.svg">
-                                    </span>ÆSIR PROTOCOL</h4>
-                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
-                                <p>A self-amending forkless governance protocol for THORChain.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="thorchain">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="col-12 pitch-text">
-                        <h1>
-                            <img class="rune-img" src="assets/img/thorchain.svg">THORCHAIN</h1>
-                        <p class="pb-10">A revolutionary protocol built to secure and exchange digital assets.</p>
-                        <ul>
-                            <li>A multi-chain protocol to dynamically scale with assets.</li>
-                            <li>Proof-of-stake pBFT consensus with on-chain governance.</li>
-                            <li>On-chain trading, liquidity and token generation.</li>
-                            <li>Layer 1 cross-chain and layer 2 cross-network compatibility.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 min-h-40v thorchain-animated-container">
-                    <div class="col-12">
-                        <div class="thorchain-img">
-                            <img class="thorchain-swirl centered spin-anim-anti-clockwise" src="assets/img/animated/clockwise.svg">
-                            <img class="thorchain-swirl centered spin-anim-clockwise" src="assets/img/animated/anti-clockwise.svg">
-                            <img class="centered thorchain-swirl-centerpiece" src="assets/img/rune-icon.svg">
-                            <img class="img-fluid centered liquidity-circle" src="assets/img/liquidity-circle.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-10v">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/THORChain/whitepaper-en.md"
-                        target="_blank">
-                        <button class="btn btn-thor mt-35">THORCHAIN WHITEPAPER</button>
-                    </a>
-                </div>
-            </div>
-        </div>
+<body>
+  <nav id="mainNav" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" style="max-width: 40%">
+        <img class="top-brand" src="assets/img/thorchain-white-text.svg">
+      </a>
     </div>
-    <div class="container-fluid min-h-60v" id="yggdrasil">
-        <div class="container pt-10vh pb-10vh">
-            <div class="row">
-                <div class="col-lg-6 show-desktop">
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-12 charts">
-                                <div class="row py-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>OTHERS</h5>
-                                    </div>
-                                    <div class="col-1" style="padding-left:0;">
-                                        <div class="br-right-2" style="height: 30px; width:15px; background-color:gray"></div>
-                                    </div>
-                                    <div class="col-10">
-                                        <p style="line-height: 28px;  font-weight: 300; font-size: 14px;" class="text-grey">&#60;4k
-                                            TPS</p>
-                                    </div>
-                                </div>
-                                <div class="row py-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>THORCHAIN</h5>
-                                    </div>
-                                    <div class="col-1" style="padding-left:0;">
-                                        <div class="br-right-2 animated-gradient-bg " style="height: 30px; width:35px;"></div>
-                                    </div>
-                                    <div class="col-11">
-                                        <p style="line-height: 28px; font-weight: 300; font-size: 14px;" class="text-grey">&#60;10k
-                                            TPS</p>
-                                    </div>
-                                </div>
-                                <div class="row py-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>THORCHAIN + YGGDRASIL</h5>
-                                    </div>
-                                    <div class="col-9 animated-gradient-bg br-right-2" style="height: 30px;">
-                                    </div>
-                                    <div class="col-3">
-                                        <p style="line-height: 28px;  font-weight: 300; font-size: 14px;" class="text-grey">~1m
-                                            TPS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="col-12 pitch-text">
-                        <h1>
-                            <img class="rune-img" src="assets/img/yggdrasil.svg">YGGDRASIL PROTOCOL</h1>
-                        <p class="pb-10">A trust-minimized highly scalable sharding solution for THORChain.</p>
-                        <ul>
-                            <li>A novel, vertically-sharded solution for multi-chains.</li>
-                            <li>Safe under asynchrony with byzantine resistance and optimal liveness.</li>
-                            <li>10k nodes to reach 180k TPS, 40k nodes for 1m TPS.</li>
-                            <li>Optimised for atomic cross-shard digital asset trading.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 show-mobile">
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-12 charts">
-                                <div class="row py-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>OTHERS</h5>
-                                    </div>
-                                    <div class="col-1" style="padding-left:0;">
-                                        <div class="br-right-2" style="height: 30px; width:10px; background-color:gray"></div>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="text-grey" style="line-height: 28px">&#60;4K TPS</p>
-                                    </div>
-                                </div>
-                                <div class="row pb-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>THORCHAIN</h5>
-                                    </div>
-                                    <div class="col-1" style="padding-left:0;">
-                                        <div class="br-right-2 animated-gradient-bg " style="height: 30px; width:15px;"></div>
-                                    </div>
-                                    <div class="col-11">
-                                        <p class="text-grey" style="line-height: 28px">&#60;10K TPS</p>
-                                    </div>
-                                </div>
-                                <div class="row pb-15px">
-                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
-                                        <h5>THORCHAIN + YGGDRASIL</h5>
-                                    </div>
-                                    <div class="col-9 animated-gradient-bg br-right-2" style="height: 30px;">
-                                    </div>
-                                    <div class="col-3">
-                                        <p class="text-grey" style="line-height: 28px">~1m TPS</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-5v pt-5vh">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Yggdrasil-Protocol/whitepaper-en.md"
-                        target="_blank">
-                        <button class="btn btn-thor">YGGDRASIL WHITEPAPER</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="BIFRÖST">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="container pitch-text">
-                        <h1>
-                            <img class="rune-img" src="assets/img/bifrost.svg">BIFRÖST PROTOCOL</h1>
-                        <p class="pb-10">A fully secured cross-chain bridge protocol for THORChain.</p>
-                        <ul>
-                            <li>Scalable, bi-directional bridges with any other chain.</li>
-                            <li>Fast and trustless value transfer with choice of performance or security.</li>
-                            <li>Byzantine resistant with full THORChain Network Security.</li>
-                            <li>100% fungibility of assets, underwritten by the protocol.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center" style="display: flex;">
-                    <div class="container-fluid" style=" margin: 0 auto;">
-                        <img class="py-25vh" src="assets/img/Thorchain_Bifrost.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-5v">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Bifrost-Protocol/whitepaper-en.md"
-                        target="_blank">
-                        <button style=" margin: 0 auto;" class="btn btn-thor">BIFRÖST WHITEPAPER</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid min-h-60v" id="Flash">
-        <div class="container pt-10vh pb-10vh">
-            <div class="row">
-                <div class="col-lg-6 show-desktop">
-                    <div class="col-12" style="display: flex;">
-                        <div class="swirl-bg-clockwise spin-anim-clockwise mobile-flash-bg">
-                        </div>
-                        <img class="flash-protocol-illust" src="assets/img/Thorchain_Flash Network_new.svg">
-                    </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="col-12 pitch-text">
-                        <h1>
-                            <img class="rune-img" src="assets/img/flash.svg">FLASH NETWORK</h1>
-                        <p class="pb-10">A Layer 2 Network for cross-network instant asset exchange.</p>
-                        <ul>
-                            <li>A layer 2 payment channel network supporting all THORChain assets.</li>
-                            <li>Shared liquidity hubs anchored to THORChain trustless price feeds.</li>
-                            <li>Protocol incentives for liquidity and reliability.</li>
-                            <li>Connections with Lightning Network and Ethereum Layer 2.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class=" col-lg-6 show-mobile py-30px ">
-                    <div class=" col-12 text-center mt-5v">
-                        <div class="swirl-bg-clockwise spin-anim-clockwise" style="width: 300px; height: 350px; margin: 0 auto;">
-                        </div>
-                        <img class="flash-protocol-illust" src="assets/img/Thorchain_Flash Network_new.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-5v">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Flash-Network/whitepaper-en.md"
-                        target="_blank">
-                        <button class="btn btn-thor" style="margin-top:25px">FLASH NETWORK WHITEPAPER</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="Æesir">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6  pitch-text">
-                    <h1>
-                        <span class="pr-10px">
-                            <img src="assets/img/aesir.svg" style="height: 50px;">
-                        </span>ÆSIR PROTOCOL</h1>
-                    <p class="pb-10">A self-amending governance protocol for THORChain.</p>
-                    <ul>
-                        <li>Incentivised governance for maximum on-chain participation.</li>
-                        <li>Supports account, state, protocol and architectural upgrades.</li>
-                        <li>A single canonical chain-set, forkless by design.</li>
-                        <li>Two-layer quadratic voting to avoid plutocracies and manipulation.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 text-center mt-25v mb-10v ">
-                    <img class="mb-5v" src="assets/img/Thorchain_Aesir.svg">
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-5v">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/AEsir-Protocol/whitepaper-en.md"
-                        target="_blank">
-                        <button class="btn btn-thor" style="margin-top:25px">ÆSIR PROTOCOL WHITEPAPER</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid min-h-60v" id="asgardex">
-        <div class="container pt-10vh pb-10vh">
-            <div class="row">
-                <div class="col-lg-6 show-desktop mt-20v mb-10v text-center">
-                    <img class="img-fluid" src="assets/img/asgardex_illust.svg">
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="col-12 pitch-text">
-                        <h1>
-                            <span class="pr-10px">
-                                <img src="assets/img/asgardex.svg" style="height: 50px;">
-                            </span>ASGARDEX</h1>
-                        <p class="pb-10">A lightning-fast decentralised exchange with a single global order book.</p>
-                        <ul>
-                            <li>Self-sovereign trading with feature-parity to current top exchanges.</li>
-                            <li>Limit and market orders with on-chain stop-loss and take-profit. </li>
-                            <li>Deep on-chain continuous liquidity with trustless price feeds.</li>
-                            <li>Advanced trades such as IoC, FoK, AoN, as well as peer-peer margin trading.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 show-mobile mt-10v mb-10v text-center">
-                    <img class="img-fluid" src="assets/img/asgardex_illust.svg">
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-12 text-center mt-5v">
-                  <a href="https://github.com/thorchain/Resources/blob/master/Whitepapers/ASGARDEX/whitepaper-en.md"
-                      target="_blank">
-                    <button class="btn btn-thor" style="margin-top:25px" disabled>ASGARDEX PAPER</button>
+  </nav>
+
+  <section id="top">
+    <div class="container-fluid top-div min-h-50v"  id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="row top-text" style="margin-top:100px">
+              <h1>The Lightning-Fast Liquidity Protocol</h1>
+              <h5 class="py-15px">Powering fast and low-fee digital asset swaps; enabling instant and
+                liquid
+                payments.</h5>
+                <p class="desc-paragraph">THORChain is built for cross-chain permissionless digital asset liquidity.
+                  Stake assets in liquidity pools to earn fees, swap assets instantly at open market prices,
+                  borrow and lend on any asset, and pay in any currency. The future is open, liquid and incentivised.
+                </p>
+              </div>
+              <div class="row text-left">
+                <div class="col-12" style="font-size: 1.5rem">
+                  <a href="https://twitter.com/thorchain_org" target="_blank">
+                    <i class="text-grey mx-10px fab fa-twitter"></i>
+                  </a>
+                  <a href="https://reddit.com/r/thorchain" target="_blank">
+                    <i class="text-grey mx-10px fab fa-reddit"></i>
+                  </a>
+                  <a href="https://github.com/thorchain" target="_blank">
+                    <i class="text-grey mx-10px fab fa-github"></i>
+                  </a>
+                  <a href="https://t.me/thorchain_org" target="_blank">
+                    <i class="text-grey mx-10px fab fa-telegram-plane"></i>
+                  </a>
+                  <a href="https://medium.com/thorchain" target="_blank">
+                    <i class="text-grey mx-10px fab fa-medium"></i>
                   </a>
                 </div>
+                <div class="col-12 py-5">
+                  <a href="https://t.me/thorchain_org" target="_blank">
+                    <button class="btn btn-thor">
+                      JOIN THE DISCUSSION
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="other-feats">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="col-12 pitch-text">
-                        <h1>OTHER FEATURES</h1>
-                        <p class="pb-10">On-chain features built for useability and adoption.</p>
-                        <ul>
-                            <li>THORChain Name Service, Account Recovery, Multi-signatures and Escrows.</li>
-                            <li>Recurring Payments, Transaction Receipts, Payment Requests.</li>
-                            <li>Developer Incentives, Privacy Features, FIX 4.4 Integration.</li>
-                            <li>Token Baskets, Stablecoins, Variable Supply Tokens and Collectibles.</li>
-                        </ul>
-                    </div>
+      </div>
+      <div class="container-fluid min-h-60v" id="ecosystem">
+        <div class="container ecosystem-container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h1>THORCHAIN ECOSYSTEM</h1>
+              <h5>A hybrid of emerging multi-layer technologies</h5>
+              <div class="container pt-25px">
+                <p class="desc-paragraph">THORChain will enhance and augment the entire digital
+                  asset ecosystem; being completely chain-agnostic and supporting any asset.
+                  <br><br> THORChain does not compete with any existing protocol or chain. Rather it is
+                  built
+                  to connect them all in one massively liquid, redundant and decentralised network.
+                  <br><br>
+                  Pay with Bitcoin, instantly receive with Ethereum at the correct market price; THORChain
+                  provides
+                  the bridging protocol with the Rune token as the liquid settlement currency.
+                  <br><br>
                 </div>
-                <div class="col-lg-6 mt-10v mb-10v text-center">
-                    <img class="img-fluid mb-5v" src="assets/img/Thorchain_Other_Features.svg">
-                </div>
+              </div>
             </div>
-            <div class="row text-center">
-                <div class="col-12">
-                    <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/THORChain/whitepaper-en.md"
-                        target="_blank">
-                        <button class="btn btn-thor ml-25" style="margin-top:25px">READ THE RESEARCH</button>
+            <div class="row component-row my-30 text-left">
+              <div class="container  text-center" style="justify-content: center">
+                <a href="https://github.com/thorchain" target="_blank">
+                  <div class="thorchain-component" style="display: inline-block;">
+                    <h4>
+                      <span class="pr-10px">
+                        <img src="assets/img/thorchain.svg">
+                      </span>THORCHAIN</h4>
+                      <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                      <p>A pBFT chain optimised for lightning-fast Layer 1 digital asset swaps.</p>
+                    </div>
+                  </a>
+                  <a href="https://github.com/thorchain/Yggdrasil-Protocol" target="_blank">
+                    <div class="thorchain-component" style="display: inline-block;">
+                      <h4>
+                        <span class="pr-10px">
+                          <img src="assets/img/yggdrasil.svg">
+                        </span>YGGDRASIL PROTOCOL</h4>
+                        <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                        <p>A trust-minimized highly scalable sharding solution for THORChain.</p>
+                      </div>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section id="roadmap">
-        <div class="container-fluid min-h-60v mb-10v">
-            <div class="row text-center  pt-10vh">
-                <div class="col-12 pb-50">
-                    <h1 style="letter-spacing: 2.75px;">
-                        ROADMAP
-                    </h1>
-                    <div class="container pt-25px">
-                        <p class="desc-paragraph">THORChain will first deploy a deeply liquid and easy-to-use
-                            decentralised
-                            exchange, ASGARDEX, with cross-chain compatibility to create a near-perfect environment for
-                            trading.
-                            With on-chain liquidity and liquidity incentivisation strategies; a favourable trading
-                            environment
-                            will create a deep pool of liquidity with trustless price feeds.
-                            <br><br> THORChain will then deploy the ASGARD Wallet, featuring a full suite of
-                            user-friendly
-                            payment tools for mainstream adoption; such as account recovery, various payment features
-                            and
-                            on-chain account facilities, such as escrow, the Name Service and multi-signatures.
-                            <br><br> THORChain will then launch the Flash Network, anchored to the Layer 1 trustless
-                            price
-                            feeds, and with cross-network liquidity hubs for instant and reliable asset exchange across
-                            any
-                            network.
-                            <br><br> In the final phase THORChain will launch the THORPayments ecosystem; a suite of
-                            end-user
-                            tools and hardware, enabling self-sovereign and trustless payments between customers and
-                            merchants
-                            globally. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-10v">
-                <div style="width:10%"></div>
-                <div style="width:39%">
-                    <div class="w-100p">
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto;">
-                            <h4>GENESIS</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.1 | SEP 2018</h5>
+                    <a href="https://github.com/thorchain/Flash-Network" target="_blank">
+                      <div class="thorchain-component" style="display: inline-block;">
+                        <h4>
+                          <span class="pr-10px">
+                            <img src="assets/img/flash.svg">
+                          </span>FLASH NETWORK</h4>
+                          <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                          <p>A Layer 2 Network for cross-network instant asset exchange.</p>
                         </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>MUSPELHEIM</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.3 | Q4 2018</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>VANAHEIMR</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.5 | Q2 2019</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>MIDGARD</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.7 | Q3 2019</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh; margin-bottom: 2.5vh;">
-                            <h4>ÁFLHEIMR</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.9 | Q1 2020</h5>
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 2%;" class="br-top-5 bg-thorchain-gradient-top-solid"></div>
-                <div style="width: 39%">
-                    <div class="w-100p">
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 10vh;">
-                            <h4>HELHEIM</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.2 | OCT 2018</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>NEIFLHEIM</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.4 | Q1 2019</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>JÖTUNHEIMR</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.6 | Q2 2019</h5>
-                        </div>
-                        <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
-                            <h4>NIÐAVELLIR</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V0.8 | Q4 2019</h5>
-                        </div>
-                    </div>
-                </div>
-                <div style="width:10%"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 "> </div>
-                <div class="col-lg-4 last-roadmap">
-                    <div>
-                        <div class=" final-roadmap text-center">
-                            <h4>ASGARD</h4>
-                            <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
-                            <h5>V1 | Q2 2020</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 "> </div>
-            </div>
-            <div class="roadmap-swirl-bg">
-                <div class=" swirl-bg-clockwise spin-anim-anti-clockwise" style="background-position: center;">
-                </div>
-                <div class=" swirl-bg-anti-clockwise spin-anim-clockwise" style="background-position: center;">
-                </div>
-                <!--
-                <img class="spin-anim-anti-clockwise" src="assets/img/animated/clockwise.svg">
-                <img class="spin-anim-anti-clockwise" src="assets/img/animated/anti-clockwise.svg">
-                -->
-            </div>
-        </div>
-    </section>
-    <section id="governance" class="pt-20vh">
-        <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 pitch-text text-center">
-                        <h1>GOVERNANCE</h1>
-                        <p>A public, transparent and decentralised organisation with open funding grants</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12  mt-5v">
-                        <div class="col-12 pitch-text">
-                            <ul class="list-unstyled">
-                                <li>A global, decentralised organisation that anyone can join.</li>
-                                <li>Transparent funding with community polling.</li>
-                                <li>Competitive development and liquidity grants available to any team or project.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 governance-anim text-center">
-                        <div class="governance-anim-div spin-anim-clockwise" style="background-position: center;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contibutors">
-        <div class="container-fluid text-center min-h-60v">
-            <div class="container text-left pb-10vh pt-10vh">
-                <div class="row">
-                    <div class="col-lg-12 pitch-text text-center">
-                        <h1>TEAM</h1>
-                        <p>A PUBLIC AND PERMISSIONLESS TEAM THAT ANYONE CAN JOIN</p>
-                    </div>
-                </div>
-                <div class="row team-row">
-                    <div class="col-lg-6 team-col">
-                        <h4>MANAGEMENT</h4>
-                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> PAUL GANGEMI </h5>
-                                    <p class="team-cred"> Project Manager</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Matt Nguyen </h5>
-                                    <p class="team-cred"> Management</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> ALAN VANTOAI </h5>
-                                    <p class="team-cred"> Management</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Gareth Walsh </h5>
-                                    <p class="team-cred"> Management</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Mikey </h5>
-                                    <p class="team-cred"> Community/p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Josip </h5>
-                                    <p class="team-cred"> Norse Cosmologist</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 team-col">
-                        <h4>DEVELOPMENT</h4>
-                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> JAZEAR BROOKS </h5>
-                                    <p class="team-cred">CS Yale
-                                        <br>Blockchain Architect</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name">Aidan Musnitsky</h5>
-                                    <p class="team-cred">CS UoC
-                                        <br>Developer</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name">Philip</h5>
-                                    <p class="team-cred">CS Cambridge
-                                        <br>Developer</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name">Cherry Shah</h5>
-                                    <p class="team-cred">HBA UoWO
-                                        <br>Developer</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name">Jon Car-Harris</h5>
-                                    <p class="team-cred">UX Lead</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row team-row">
-                    <div class="col-lg-6 team-col">
-                        <h4>RESEARCH</h4>
-                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
-                        <div class="team-member">
-                            <h5 class="team-name"> Stefan Beyer </h5>
-                            <p class="team-cred"> PHD Manchester - Chief Scientist</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 team-col">
-                        <h4>STRATEGY</h4>
-                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Steven Pang </h5>
-                                    <p class="team-cred"> Business Strategist</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="team-member">
-                                    <h5 class="team-name"> Jim Shiyu Jin </h5>
-                                    <p class="team-cred"> Business Strategist</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="https://thorchain.typeform.com/to/U7FTWq" target="_blank">
-                            <button class="btn btn-thor mt-10v mb-10v w-50p">JOIN THE TEAM</button>
+                      </a>
+                      <a href="https://github.com/thorchain/Bifrost-Protocol" target="_blank">
+                        <div class="thorchain-component" style="display: inline-block;">
+                          <h4>
+                            <span class="pr-10px">
+                              <img src="assets/img/bifrost.svg">
+                            </span>BIFRÖST PROTOCOL</h4>
+                            <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                            <p>A cross-chain bridge protocol for THORChain.</p>
+                          </div>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="distribution">
-        <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 pitch-text text-center">
-                        <h1>RUNE</h1>
-                        <p>THE TOKEN POWERING THE ECOSYSTEM</p>
-                    </div>
-                </div>
-                <div class="row pt-5vh">
-                    <div class="col-lg-6 ">
-                        <div class="py-15px">
-                            <h5 class="team-name">NETWORK SECURITY</h5>
-                            <p style="font-weight: 200">THORChain Validators bond Rune to earn block rewards
-                                (Proof-of-Stake).<br>Rune
-                                holders can delegate tokens to validators to share the reward.</p>
+                        <a href="https://github.com/thorchain/ASGARDEX" target="_blank">
+                          <div class="thorchain-component" style="display: inline-block;">
+                            <h4>
+                              <span class="pr-10px">
+                                <img src="assets/img/asgardex.svg">
+                              </span>ASGARDEX</h4>
+                              <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                              <p>A fast and secure liquidity interface for THORChain.</p>
+                            </div>
+                          </a>
+                          <a href="https://github.com/thorchain/AEsir-Protocol" target="_blank">
+                            <div class="thorchain-component" style="display: inline-block;">
+                              <h4>
+                                <span class="pr-10px">
+                                  <img src="assets/img/aesir.svg">
+                                </span>ÆSIR PROTOCOL</h4>
+                                <div class="bg-thorchain-gradient-center w-100p" style=" height:1px; margin-bottom: 10px;"></div>
+                                <p>A forkless governance protocol for THORChain.</p>
+                              </div>
+                            </a>
+                          </div>
                         </div>
-                        <div class="py-15px">
-                            <h5 class="team-name">ON-CHAIN LIQUIDITY</h5>
-                            <p style="font-weight: 200">Rune holders stake assets to earn liquidity fees in both Layer
-                                1
-                                liquidity pools and Layer 2 liquidity hubs.</p>
-                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="distribution">
+                    <div class="container-fluid lgrey-bg min-h-60v pt-10vh pb-10vh">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12 pitch-text text-center">
+                            <h1>NEWS</h1>
+                            <p>RECENT DEVELOPMENTS IN THE THORCHAIN ECOSYSTEM</p>
 
-                        <div class="py-15px">
-                            <h5 class="team-name">ON-CHAIN GOVERNANCE</h5>
-                            <p style="font-weight: 200">Members bond Rune to cast votes for continuous protocol
-                                governance.</p>
+                            <div class="card-deck">
+                              <div class="card text-white bg-dark my-1 py-1 mb-5">
+                                <img class="card-img-top" src="./assets/img/binanceDEX.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-titlem my-1 py-1">Binance DEX Proposal</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">27 June 2019</small></p>
+                                  <p class="card-text my-1 py-1">THORChain team propose to list RUNE on Binance Chain</p>
+
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://community.binance.org/topic/357/proposal-to-list-thorchain-rune-on-binance-dex" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                              <div class="card text-white bg-dark my-1 py-1 mb-5">
+                                <img class="card-img-top" src="./assets/img/binance_rune_vlabel.jpg" alt="Card image cap">
+                                <div class="card-body my-1 py-1">
+                                  <h5 class="card-title my-1 py-1">Binance Info V-Label Project</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">26 June 2019</small></p>
+                                  <p class="card-text mmy-1 py-1">THORChain joins Binance Info transparency initiative.</p>
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://info.binance.com/en/currencies/rune" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                              <div class="card text-white bg-dark my-1 py-1 mb-5">
+                                <img class="card-img-top v" src="./assets/img/Rune_Binance.jpg" alt="Card image cap">
+                                <div class="card-body my-1 py-1">
+                                  <h5 class="card-title my-1 py-1">RUNE on Binance Chain</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">25 June 2019</small></p>
+                                  <p class="card-text my-1 py-1">THORChain mints the RUNE BEP2 Asset on Binance Chain</p>
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://medium.com/thorchain/thorchain-to-launch-the-rune-token-on-binance-chain-a66dd29e2ea0" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card-deck">
+                              <div class="card text-white bg-dark my-1 py-1">
+                                <img class="card-img-top" src="./assets/img/cosmos-berlin.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-titlem my-1 py-1">Cosmos Hackatom Berlin</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">16 June 2019</small></p>
+                                  <p class="card-text my-1 py-1">THORChain research team demos a liquidity pool asset swap service powered by Cosmos SDK and places as finalists in the hackathon.</p>
+
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://hackatom-berlin.cosmos.network" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                              <div class="card text-white bg-dark my-1 py-1">
+                                <img class="card-img-top" src="./assets/img/eth-peg-zone.png" alt="Card image cap">
+                                <div class="card-body my-1 py-1">
+                                  <h5 class="card-title my-1 py-1">1-way Ethereum Bridge</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">05 June 2019</small></p>
+                                  <p class="card-text my-1 py-1">THORChain and partner Swishlabs ship the first phase of the Ethereum Brdige Zone as part of the Interchain grant.</p>
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://github.com/swishlabsco/cosmos-ethereum-bridge" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                              <div class="card text-white bg-dark my-1 py-1mb-1">
+                                <img class="card-img-top v" src="./assets/img/interchain-logo-white.png" alt="Card image cap">
+                                <div class="card-body my-1 py-1">
+                                  <h5 class="card-title my-1 py-1">Interchain Grant</h5>
+                                  <p class="card-text my-1 py-1"><small class="text-muted">04 May 2019</small></p>
+                                  <p class="card-text my-1 py-1">The Interchain Foundation, THORChain and Swish Labs begin working together to build a new suite of tools to power cross-chain bridges, starting with Ethereum and expanding from there.</p>
+                                </div>
+                                <div class="card-footer my-0 py-0">
+                                  <a href="https://medium.com/thorchain/building-the-next-generation-bridge-870aeff16672" class="btn btn-thor">Read more</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row my-30" style="padding-top:40px">
+                              <div class="col">
+                                <a href="https://medium.com/thorchain" class="btn btn-thor">THORCHAIN BLOG</a>
+
+                              </div>
+                            </div>
+
+                          </div>
                         </div>
-                        <i style="font-weight: 200">*Final functionality may change depending on protocol development.</i>
+                      </div>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <img class="py-30px" src="assets/img/rune-icon.svg" style="width: 50%;">
+                  </section>
+
+
+
+                  <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="thorchain">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <div class="col-12 pitch-text">
+                            <h1>
+                              <img class="rune-img" src="assets/img/thorchain.svg">THORCHAIN</h1>
+                              <p class="pb-10">A protocol built to incentivise liquidity for digital assets.</p>
+                              <ul>
+                                <li>A multi-chain protocol to dynamically scale with assets.</li>
+                                <li>Proof-of-stake pBFT consensus with on-chain governance.</li>
+                                <li>On-chain swaps, liquidity and asset generation.</li>
+                                <li>Layer 1 cross-chain and layer 2 cross-network compatibility.</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 min-h-40v thorchain-animated-container">
+                            <div class="col-12">
+                              <div class="thorchain-img">
+                                <img class="thorchain-swirl centered spin-anim-anti-clockwise" src="assets/img/animated/clockwise.svg">
+                                <img class="thorchain-swirl centered spin-anim-clockwise" src="assets/img/animated/anti-clockwise.svg">
+                                <img class="centered thorchain-swirl-centerpiece" src="assets/img/rune-icon.svg">
+                                <img class="img-fluid centered liquidity-circle" src="assets/img/liquidity-circle.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class=" col-12 text-center mt-10v">
+                            <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/THORChain/whitepaper-en.md"
+                            target="_blank">
+                            <button class="btn btn-thor mt-35">THORCHAIN WHITEPAPER</button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="footer" class="container-fluid p-20px">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4" style="height:30px">
-                    <img style="height:30px" class="img-fluid" src="assets/img/thorchain-white-text.svg">
-                </div>
-                <div class="col-md-8">
-                  <div class="col-md-12  text-right" style="font-size: 1.5rem">
-                      <a href="https://twitter.com/thorchain_org" target="_blank">
-                          <i class="text-grey mx-10px fab fa-twitter"></i>
-                      </a>
-                      <a href="https://reddit.com/r/thorchain" target="_blank">
-                          <i class="text-grey mx-10px fab fa-reddit"></i>
-                      </a>
-                      <a href="https://github.com/thorchain" target="_blank">
-                          <i class="text-grey mx-10px fab fa-github"></i>
-                      </a>
-                      <a href="https://t.me/thorchain_org" target="_blank">
-                          <i class="text-grey mx-10px fab fa-telegram-plane"></i>
-                      </a>
-                      <a href="https://medium.com/thorchain" target="_blank">
-                          <i class="text-grey mx-10px fab fa-medium"></i>
-                      </a>
                   </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+                  <div class="container-fluid min-h-60v" id="yggdrasil">
+                    <div class="container pt-10vh pb-10vh">
+                      <div class="row">
+                        <div class="col-lg-6 show-desktop">
+                          <div class="row">
+                            <div class="container">
+                              <div class="col-12 charts">
+                                <div class="row py-15px">
+                                  <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                    <h5>OTHERS</h5>
+                                  </div>
+                                  <div class="col-1" style="padding-left:0;">
+                                    <div class="br-right-2" style="height: 30px; width:15px; background-color:gray"></div>
+                                  </div>
+                                  <div class="col-10">
+                                    <p style="line-height: 28px;  font-weight: 300; font-size: 14px;" class="text-grey">&#60;4k
+                                      TPS</p>
+                                    </div>
+                                  </div>
+                                  <div class="row py-15px">
+                                    <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                      <h5>THORCHAIN</h5>
+                                    </div>
+                                    <div class="col-1" style="padding-left:0;">
+                                      <div class="br-right-2 animated-gradient-bg " style="height: 30px; width:35px;"></div>
+                                    </div>
+                                    <div class="col-11">
+                                      <p style="line-height: 28px; font-weight: 300; font-size: 14px;" class="text-grey">&#60;10k
+                                        TPS</p>
+                                      </div>
+                                    </div>
+                                    <div class="row py-15px">
+                                      <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                        <h5>THORCHAIN + YGGDRASIL</h5>
+                                      </div>
+                                      <div class="col-9 animated-gradient-bg br-right-2" style="height: 30px;">
+                                      </div>
+                                      <div class="col-3">
+                                        <p style="line-height: 28px;  font-weight: 300; font-size: 14px;" class="text-grey">~1m
+                                          TPS</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-12">
+                                <div class="col-12 pitch-text">
+                                  <h1>
+                                    <img class="rune-img" src="assets/img/yggdrasil.svg">YGGDRASIL PROTOCOL</h1>
+                                    <p class="pb-10">A trust-minimized highly scalable sharding solution for THORChain.</p>
+                                    <ul>
+                                      <li>A novel, vertically-sharded solution for multi-chains.</li>
+                                      <li>Safe under asynchrony with byzantine resistance and optimal liveness.</li>
+                                      <li>10k nodes to reach 180k TPS, 40k nodes for 1m TPS.</li>
+                                      <li>Optimised for atomic cross-shard digital asset swaps.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 show-mobile">
+                                  <div class="row">
+                                    <div class="container">
+                                      <div class="col-12 charts">
+                                        <div class="row py-15px">
+                                          <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                            <h5>OTHERS</h5>
+                                          </div>
+                                          <div class="col-1" style="padding-left:0;">
+                                            <div class="br-right-2" style="height: 30px; width:10px; background-color:gray"></div>
+                                          </div>
+                                          <div class="col-10">
+                                            <p class="text-grey" style="line-height: 28px">&#60;4K TPS</p>
+                                          </div>
+                                        </div>
+                                        <div class="row pb-15px">
+                                          <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                            <h5>THORCHAIN</h5>
+                                          </div>
+                                          <div class="col-1" style="padding-left:0;">
+                                            <div class="br-right-2 animated-gradient-bg " style="height: 30px; width:15px;"></div>
+                                          </div>
+                                          <div class="col-11">
+                                            <p class="text-grey" style="line-height: 28px">&#60;10K TPS</p>
+                                          </div>
+                                        </div>
+                                        <div class="row pb-15px">
+                                          <div class="col-12" style="padding-left: 0px;padding-bottom: 5px">
+                                            <h5>THORCHAIN + YGGDRASIL</h5>
+                                          </div>
+                                          <div class="col-9 animated-gradient-bg br-right-2" style="height: 30px;">
+                                          </div>
+                                          <div class="col-3">
+                                            <p class="text-grey" style="line-height: 28px">~1m TPS</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v pt-5vh">
+                                  <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Yggdrasil-Protocol/whitepaper-en.md"
+                                  target="_blank">
+                                  <button class="btn btn-thor">YGGDRASIL WHITEPAPER</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="BIFRÖST">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-lg-6 col-md-12">
+                                <div class="container pitch-text">
+                                  <h1>
+                                    <img class="rune-img" src="assets/img/bifrost.svg">BIFRÖST PROTOCOL</h1>
+                                    <p class="pb-10">A cross-chain bridge protocol for THORChain.</p>
+                                    <ul>
+                                      <li>Scalable, bi-directional bridges with any other chain.</li>
+                                      <li>Fast and trustless value transfer with choice of performance or security.</li>
+                                      <li>Byzantine resistant with full THORChain Network Security.</li>
+                                      <li>Complete fungibility of assets, underwritten by the protocol.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 text-center" style="display: flex;">
+                                  <div class="container-fluid" style=" margin: 0 auto;">
+                                    <img class="py-25vh" src="assets/img/Thorchain_Bifrost.svg">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v">
+                                  <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Bifrost-Protocol/whitepaper-en.md"
+                                  target="_blank">
+                                  <button style=" margin: 0 auto;" class="btn btn-thor">BIFRÖST WHITEPAPER</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid min-h-60v" id="Flash">
+                          <div class="container pt-10vh pb-10vh">
+                            <div class="row">
+                              <div class="col-lg-6 show-desktop">
+                                <div class="col-12" style="display: flex;">
+                                  <div class="swirl-bg-clockwise spin-anim-clockwise mobile-flash-bg">
+                                  </div>
+                                  <img class="flash-protocol-illust" src="assets/img/Thorchain_Flash Network_new.svg">
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div class="col-12 pitch-text">
+                                  <h1>
+                                    <img class="rune-img" src="assets/img/flash.svg">FLASH NETWORK</h1>
+                                    <p class="pb-10">A Layer 2 Network for cross-network instant asset exchange.</p>
+                                    <ul>
+                                      <li>A layer 2 payment channel network supporting all THORChain assets.</li>
+                                      <li>Shared liquidity hubs anchored to THORChain trustless price feeds.</li>
+                                      <li>Protocol incentives for liquidity and reliability.</li>
+                                      <li>Connections with Lightning Network and Ethereum Layer 2.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class=" col-lg-6 show-mobile py-30px ">
+                                  <div class=" col-12 text-center mt-5v">
+                                    <div class="swirl-bg-clockwise spin-anim-clockwise" style="width: 300px; height: 350px; margin: 0 auto;">
+                                    </div>
+                                    <img class="flash-protocol-illust" src="assets/img/Thorchain_Flash Network_new.svg">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v">
+                                  <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/Flash-Network/whitepaper-en.md"
+                                  target="_blank">
+                                  <button class="btn btn-thor" style="margin-top:25px">FLASH NETWORK WHITEPAPER</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh" id="Æesir">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-lg-6  pitch-text">
+                                <h1>
+                                  <span class="pr-10px">
+                                    <img src="assets/img/aesir.svg" style="height: 50px;">
+                                  </span>ÆSIR PROTOCOL</h1>
+                                  <p class="pb-10">A forkless governance protocol for THORChain.</p>
+                                  <ul>
+                                    <li>Incentivised governance for maximum on-chain participation.</li>
+                                    <li>Supports account, state, protocol and architectural upgrades.</li>
+                                    <li>A single canonical chain-set, forkless by design.</li>
+                                    <li>Two-layer quadratic voting to avoid plutocracies and manipulation.</li>
+                                  </ul>
+                                </div>
+                                <div class="col-lg-6 text-center mt-25v mb-10v ">
+                                  <img class="mb-5v" src="assets/img/Thorchain_Aesir.svg">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v">
+                                  <a href="https://github.com/thorchain/Resources/tree/master/Whitepapers/AEsir-Protocol/whitepaper-en.md"
+                                  target="_blank">
+                                  <button class="btn btn-thor" style="margin-top:25px">ÆSIR PROTOCOL WHITEPAPER</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid min-h-60v" id="asgardex">
+                          <div class="container pt-10vh pb-10vh">
+                            <div class="row">
+                              <div class="col-lg-6 show-desktop mt-20v mb-10v text-center">
+                                <img class="img-fluid" src="assets/img/asgardex_illust.svg">
+                              </div>
+                              <div class="col-lg-6 col-md-12">
+                                <div class="col-12 pitch-text">
+                                  <h1>
+                                    <span class="pr-10px">
+                                      <img src="assets/img/asgardex.svg" style="height: 50px;">
+                                    </span>ASGARDEX</h1>
+                                    <p class="pb-10">A lightning-fast liquidity interface with trustless liquidity pools.</p>
+                                    <ul>
+                                      <li>Instant asset swaps at trustless prices.</li>
+                                      <li>Self-sovereign liquidity staking for any asset. </li>
+                                      <li>Deep on-chain continuous liquidity with trustless price feeds.</li>
+                                      <li>Advanced features such as derivatives, lending, indexes and baskets.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 show-mobile mt-10v mb-10v text-center">
+                                  <img class="img-fluid" src="assets/img/asgardex_illust.svg">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v">
+                                  <a href="https://github.com/thorchain/Resources/blob/master/Whitepapers/ASGARDEX/whitepaper-en.md"
+                                  target="_blank">
+                                  <button class="btn btn-thor" style="margin-top:25px">ASGARDEX PAPER</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <section id="roadmap">
+                          <div class="container-fluid min-h-60v mb-10v">
+                            <div class="row text-center  pt-10vh">
+                              <div class="col-12 pb-50">
+                                <h1 style="letter-spacing: 2.75px;">
+                                  ROADMAP
+                                </h1>
+                                <div class="container pt-25px">
+                                  <p class="desc-paragraph">THORChain will first deploy a deeply liquid and easy-to-use
+                                    decentralised
+                                    liquidity interface, with cross-chain compatibility.
+                                    With on-chain liquidity and liquidity incentivisation strategies; a favourable asset
+                                    environment
+                                    will create a deep pool of liquidity with trustless price feeds.
+                                    <br><br> THORChain will then deploy the ASGARD Wallet, featuring a full suite of
+                                    user-friendly
+                                    payment tools for mainstream adoption; such as account recovery, various payment features
+                                    and
+                                    on-chain account facilities, such as escrow, the Name Service and multi-signatures.
+                                    <br><br> THORChain will then launch the Flash Network, anchored to the Layer 1 trustless
+                                    price
+                                    feeds, and with cross-network liquidity hubs for instant and reliable asset exchange across
+                                    any
+                                    network.
+                                    <br><br> In the final phase THORChain will launch the THORPayments ecosystem; a suite of
+                                    end-user
+                                    tools and hardware, enabling self-sovereign and trustless payments between customers and
+                                    merchants
+                                    globally. </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-10v">
+                                <div style="width:10%"></div>
+                                <div style="width:39%">
+                                  <div class="w-100p">
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto;">
+                                      <h4>GENESIS</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.1 | SEP 2018</h5>
+                                      <p class="text-muted">Testnet deployed</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>MUSPELHEIM</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.3 | Q2 2019</h5>
+                                      <p class="text-muted">Ethereum 1-way Bridge</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>VANAHEIMR</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.5 | Q1 2020</h5>
+                                      <p class="text-muted">Mainnet launch with Binance Chain Assets</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>MIDGARD</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.7 | Q3 2020</h5>
+                                      <p class="text-muted">Launch with Monero, Loki Mainnet Bridge</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh; margin-bottom: 2.5vh;">
+                                      <h4>ÁFLHEIMR</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.9 | Q1 2021</h5>
+                                      <p class="text-muted">Launch of the Flash Network</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div style="width: 2%;" class="br-top-5 bg-thorchain-gradient-top-solid"></div>
+                                <div style="width: 39%">
+                                  <div class="w-100p">
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 10vh;">
+                                      <h4>HELHEIM</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.2 | Q1 2019</h5>
+                                      <p class="text-muted">Exchange and trading modules built</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>NEIFLHEIM</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.4 | Q4 2019</h5>
+                                      <p class="text-muted">Ethereum 2-way Bridge</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>JÖTUNHEIMR</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.6 | Q2 2020</h5>
+                                      <p class="text-muted">Launch with Bitcoin, Litecoin Mainnet Bridge</p>
+                                    </div>
+                                    <div class="thorchain-component roadmap-component text-center" style="margin: 0 auto; margin-top: 2.5vh;">
+                                      <h4>NIÐAVELLIR</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V0.8 | Q4 2020</h5>
+                                      <p class="text-muted">Launch with Developer Tooling for any altcoin bridge</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div style="width:10%"></div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-4 "> </div>
+                                <div class="col-lg-4 last-roadmap">
+                                  <div>
+                                    <div class=" final-roadmap text-center">
+                                      <h4>ASGARD</h4>
+                                      <div class="bg-thorchain-gradient-center" style="margin: 0 auto; height: 2px; width: 75%"></div>
+                                      <h5>V1 | Q2 2021</h5>
+                                      <p class="text-muted">THORPayments Ecosystem</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 "> </div>
+                              </div>
+                              <div class="roadmap-swirl-bg">
+                                <div class=" swirl-bg-clockwise spin-anim-anti-clockwise" style="background-position: center;">
+                                </div>
+                                <div class=" swirl-bg-anti-clockwise spin-anim-clockwise" style="background-position: center;">
+                                </div>
+                                <!--
+                                <img class="spin-anim-anti-clockwise" src="assets/img/animated/clockwise.svg">
+                                <img class="spin-anim-anti-clockwise" src="assets/img/animated/anti-clockwise.svg">
+                              -->
+                            </div>
+                          </div>
+                        </section>
+                        <section id="governance" class="pt-20vh">
+                          <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-lg-12 pitch-text text-center">
+                                  <h1>GOVERNANCE</h1>
+                                  <p>A public, transparent and decentralised organisation with open funding grants</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-12  mt-5v">
+                                  <div class="col-12 pitch-text">
+                                    <ul class="list-unstyled">
+                                      <li>A global, decentralised organisation that anyone can join.</li>
+                                      <li>Transparent funding with community polling.</li>
+                                      <li>Competitive development and liquidity grants available to any team or project.</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 governance-anim text-center">
+                                  <div class="governance-anim-div spin-anim-clockwise" style="background-position: center;">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class=" col-12 text-center mt-5v">
+                                  <a href=""
+                                  target="_blank">
+                                  <button class="btn btn-thor" style="margin-top:25px" disabled>APPLICATIONS OPENING SOON</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section id="contibutors">
+                        <div class="container-fluid text-center min-h-60v">
+                          <div class="container text-left pb-10vh pt-10vh">
+                            <div class="row">
+                              <div class="col-lg-12 pitch-text text-center">
+                                <h1>TEAM</h1>
+                                <p>A PUBLIC AND PERMISSIONLESS TEAM THAT ANYONE CAN JOIN</p>
+                              </div>
+                            </div>
+                            <div class="row team-row">
+                              <div class="col-lg-6 team-col">
+                                <h4>MANAGEMENT</h4>
+                                <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/kai.jpg" class="img-mask" alt="Kai" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="https://www.linkedin.com/in/kaiansaari/" style="color:rgba(51,255,153,1)"> Kai Ansaari </a></h5>
+                                          <p class="team-cred"> Project Manager</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/matt.jpg" class="img-mask" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="https://www.linkedin.com/in/mrmattnguyen/" style="color:rgba(51,255,153,1)"> Matt Nguyen </a></h5>
+                                          <p class="team-cred"> Management</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/avt.jpg" class="img-mask" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="https://www.linkedin.com/in/vantoai/" style="color:rgba(51,255,153,1)"> ALAN VANTOAI </a></h5>
+                                          <p class="team-cred"> Management</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/gareth.jpg" class="img-mask" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="https://www.linkedin.com/in/garethwalsh/" style="color:rgba(51,255,153,1)"> Gareth Walsh </a></h5>
+                                          <p class="team-cred"> Management</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/josip.jpg" class="img-mask" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="#" style="color:rgba(51,255,153,1)"> Josip Zdilar </a></h5>
+                                          <p class="team-cred"> Community </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 team-col">
+                                <h4>DEVELOPMENT</h4>
+                                <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="team-member">
+                                      <div class="row">
+                                        <div class="col-3">
+                                          <img src="./assets/img/jazear.jpg" class="img-mask" width="50" height="auto">
+                                        </div>
+                                        <div class="col-9">
+                                          <h5 class="team-name"><a href="https://www.linkedin.com/in/jazearbrooks/" style="color:rgba(51,255,153,1)"> JAZEAR BROOKS </a></h5>
+                                          <p class="team-cred">CS Yale
+                                            <br>Blockchain Architect</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="team-member">
+                                        <div class="row">
+                                          <div class="col-3">
+                                            <img src="./assets/img/aiden.jpg" class="img-mask" width="50" height="auto">
+                                          </div>
+                                          <div class="col-9">
+                                            <h5 class="team-name"><a href="https://www.linkedin.com/in/aidanmusnitzky/" style="color:rgba(51,255,153,1)"> Aidan Musnitsky </a></h5>
+                                            <p class="team-cred">CS UoC
+                                              <br>Developer</p>
+                                            </div>
+                                          </div>
+                                        </div>
 
-</body>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
-    crossorigin="anonymous"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/thorchain.js"></script>
-<script src="assets/js/css3-animate-it.js"></script>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="team-member">
+                                          <div class="row">
+                                            <div class="col-3">
+                                              <img src="./assets/img/phillip.jpg" class="img-mask" width="50" height="auto">
+                                            </div>
+                                            <div class="col-9">
+                                              <h5 class="team-name"><a href="https://www.linkedin.com/in/philipstanislaus/" style="color:rgba(51,255,153,1)"> Philip Stanislaus </a></h5>
+                                              <p class="team-cred">CS Cambridge
+                                                <br>Developer</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="team-member">
+                                            <div class="row">
+                                              <div class="col-3">
+                                                <img src="./assets/img/chai.jpg" class="img-mask" width="50" height="auto">
+                                              </div>
+                                              <div class="col-9">
+                                                <h5 class="team-name"><a href="https://www.linkedin.com/in/cherryshah/" style="color:rgba(51,255,153,1)"> Cherry Shah </a></h5>
+                                                <p class="team-cred">HBA UoWO
+                                                  <br>Developer</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row team-row">
+                                      <div class="col-lg-6 team-col">
+                                        <h4>RESEARCH</h4>
+                                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
+                                        <div class="team-member">
+                                          <div class="row">
+                                            <div class="col-3">
+                                              <img src="./assets/img/stefan.jpg" class="img-mask" width="50" height="auto">
+                                            </div>
+                                            <div class="col-9">
+                                              <h5 class="team-name"><a href="https://www.linkedin.com/in/stefan-beyer-11713712/" style="color:rgba(51,255,153,1)"> Stefan Beyer </a></h5>
+                                              <p class="team-cred"> PHD Manchester - Chief Scientist</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="team-member">
+                                          <div class="row">
+                                            <div class="col-3">
+                                              <img src="./assets/img/jp.jpg" class="img-mask" width="50" height="auto">
+                                            </div>
+                                            <div class="col-9">
+                                              <h5 class="team-name"><a href="https://www.linkedin.com/in/jpthor/" style="color:rgba(51,255,153,1)"> John-Paul Thorbjornsen </a></h5>
+                                              <p class="team-cred"> CanYa, Loki, Binance Fellow</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6 team-col">
+                                        <h4>STRATEGY</h4>
+                                        <div class="bg-thorchain-gradient-center" style="height: 1px; width: 75%"></div>
+                                        <div class="row">
+                                          <div class="col-lg-6">
+                                            <div class="team-member">
+                                              <div class="row">
+                                                <div class="col-3">
+                                                  <img src="./assets/img/jch.jpg" class="img-mask" width="50" height="auto">
+                                                </div>
+                                                <div class="col-9">
+                                                  <h5 class="team-name"><a href="https://www.linkedin.com/in/jcarrharris/" style="color:rgba(51,255,153,1)"> Jon Car-Harris </a></h5>
+                                                  <p class="team-cred"> Product Lead</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                            <div class="team-member">
+                                              <div class="row">
+                                                <div class="col-3">
+                                                  <img src="./assets/img/jim.jpg" class="img-mask" width="50" height="auto">
+                                                </div>
+                                                <div class="col-9">
+                                                  <h5 class="team-name"><a href="https://www.linkedin.com/in/shiyu-jin/" style="color:rgba(51,255,153,1)"> Jim Shiyu Jin </a></h5>
+                                                  <p class="team-cred"> Business Strategist </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/6.0.2/firebase-app.js"></script>
+                                      </div>
+                                    </div>
+                                    <!-- <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                    <a href="https://thorchain.typeform.com/to/U7FTWq" target="_blank">
+                                    <button class="btn btn-thor mt-10v mb-10v w-50p">JOIN THE TEAM</button>
+                                  </a>
+                                </div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </section>
+                        <section id="distribution">
+                          <div class="container-fluid grey-bg min-h-60v pt-10vh pb-10vh">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-lg-12 pitch-text text-center">
+                                  <h1>RUNE</h1>
+                                  <p>THE TOKEN POWERING THE ECOSYSTEM</p>
+                                </div>
+                              </div>
+                              <div class="row pt-5vh">
+                                <div class="col-lg-6 ">
+                                  <div class="py-15px">
+                                    <h5 class="team-name">NETWORK SECURITY</h5>
+                                    <p style="font-weight: 200">THORChain Validators bond Rune to earn block rewards
+                                      (Proof-of-Stake).<br>Rune
+                                      holders can delegate tokens to validators to share the reward.</p>
+                                    </div>
+                                    <div class="py-15px">
+                                      <h5 class="team-name">ON-CHAIN LIQUIDITY</h5>
+                                      <p style="font-weight: 200">Rune holders stake assets to earn liquidity fees in both Layer
+                                        1
+                                        liquidity pools and Layer 2 liquidity hubs.</p>
+                                      </div>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#reserved-urls -->
+                                      <div class="py-15px">
+                                        <h5 class="team-name">ON-CHAIN GOVERNANCE</h5>
+                                        <p style="font-weight: 200">Members bond Rune to cast votes for continuous protocol
+                                          governance.</p>
+                                        </div>
+                                        <i style="font-weight: 200">*Final functionality may change depending on protocol development.</i>
+                                      </div>
+                                      <div class="col-lg-6 text-center">
+                                        <img class="py-30px" src="assets/img/rune-icon.svg" style="width: 50%;">
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class=" col-12 text-center mt-5v">
+                                        <a href="https://t.me/thorchain_org"
+                                        target="_blank">
+                                        <button class="btn btn-thor" style="margin-top:25px">LEARN MORE</button>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+                            <section id="form">
+                              <div class="container-fluid min-h-60v">
+                                <div class="container pb-10vh pt-10vh">
+                                  <div class="row">
+                                    <div class="col-lg-12 pitch-text text-center">
+                                      <h1>CONTACT</h1>
+                                      <p>STAY UP TO DATE ON THE PROJECT PROGRESS</p>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-6 pitch-text">
 
-</html>
+                                      <form accept-charset="UTF-8" action="https://emails.pabbly.com/signups/subscribe/IjgzMTQ0NyI_3D/immediate" id="mailget_signup_form" name="mailget_form" method="post" onsubmit="return v_mailget()" >
+                                        <div>
+                                          <input name="utf8" type="hidden" value="?"/>
+                                          <input name="subs_set_url" type="hidden" value="https://thorchain.org"/>
+                                        </div>
+                                        <div class="mg-row">
+                                          <label for="signup_name" style="font-weight: 200;color:#FFF">Name</label>
+                                          <input id="signup_name" name="subs_name" type="text" placeholder="Your Name" />
+                                        </div>
+                                        <div class="mg-row">
+                                          <label for="signup_email" style="font-weight: 200;color:#FFF">Email <span id="mailget_show_message" class="mg-error"></span></label>
+                                          <input id="signup_email" name="subs_email" type="email" placeholder="email@example.com" />
+                                        </div>
+                                        <div class="mg-row">
+                                          <input type="submit" class="submit" value="Subscribe" id="submit_button" />
+                                        </div>
+                                      </form>
+
+                                    </div>
+                                    <div class="col-6">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+
+                            <footer id="footer" class="container-fluid p-20px">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-4" style="height:30px">
+                                    <img style="height:30px" class="img-fluid" src="assets/img/thorchain-white-text.svg">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="col-md-12  text-right" style="font-size: 1.5rem">
+                                      <a href="https://twitter.com/thorchain_org" target="_blank">
+                                        <i class="text-grey mx-10px fab fa-twitter"></i>
+                                      </a>
+                                      <a href="https://reddit.com/r/thorchain" target="_blank">
+                                        <i class="text-grey mx-10px fab fa-reddit"></i>
+                                      </a>
+                                      <a href="https://github.com/thorchain" target="_blank">
+                                        <i class="text-grey mx-10px fab fa-github"></i>
+                                      </a>
+                                      <a href="https://t.me/thorchain_org" target="_blank">
+                                        <i class="text-grey mx-10px fab fa-telegram-plane"></i>
+                                      </a>
+                                      <a href="https://medium.com/thorchain" target="_blank">
+                                        <i class="text-grey mx-10px fab fa-medium"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </footer>
+
+                          </body>
+                          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+                          crossorigin="anonymous">
+                          <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                          crossorigin="anonymous"></script>
+                          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
+                          crossorigin="anonymous"></script>
+                          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
+                          crossorigin="anonymous"></script>
+                          <script src="assets/js/jquery.easing.min.js"></script>
+                          <script src="assets/js/thorchain.js"></script>
+                          <script src="assets/js/css3-animate-it.js"></script>
+
+                          <!-- The core Firebase JS SDK is always required and must be listed first -->
+                          <script src="/__/firebase/6.0.2/firebase-app.js"></script>
+
+
+                          <script type="text/javascript" >
+                          function v_mailget() { var x = document.forms["mailget_form"]["subs_email"].value; var atpos = x.indexOf("@"); var dotpos = x.lastIndexOf("."); if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) { document.getElementById("mailget_show_message").innerHTML="valid email required !"; document.forms["mailget_form"]["subs_email"].focus(); return false; }else{ return true; } }
+                        </script>
+
+                        <!-- TODO: Add SDKs for Firebase products that you want to use
+                        https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+                        <!-- Initialize Firebase -->
+                        <script src="/__/firebase/init.js"></script>
+
+                        </html>

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "thorchain-landing"
+    "default": "thorchain-landing",
+    "jp": "thorchain-landing"
   }
 }
