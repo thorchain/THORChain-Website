@@ -68,8 +68,18 @@ ul{
     padding-left: 20px;
 }
 
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+
 .img-mask {
-  border-radius: 50% !important;
+  border-radius: 5px
+}
+
+.img-maskr {
+  border-radius: 10% !important;
 }
 
 
@@ -158,7 +168,7 @@ h1, h2, h3, h4, h5, button{
     background-clip: padding-box;
     padding: 15px;
     transition: all 0.5s;
-    min-width: 300px;
+    min-width: 200px;
 }
 .rune-img{
     height: 50px;

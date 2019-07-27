@@ -1,0 +1,61 @@
+
+
+#hhead{
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#hhead2{
+	color: #fff;
+	text-shadow: 0px 3px 3px rgba(0, 0, 255, 0.5);
+}
+
+.time{
+	background-color: #50E3C2;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -saf-border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+#hhead,
+#hhead2,
+#fday,
+#fhour,
+#fmin,
+#fsec
+{
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Century Gothic', Georgia, Tahoma, sans-serif;
+	font-size: 3em;
+}
+
+#container
+{
+   text-align: center;
+   background: rgba(0, 0, 0, 0.8);
+}
+
+#display div{
+	display: inline-block;
+}
+
+.timeLeft
+{
+	color: #fff;
+}
+
+.time span{
+	display: block;
+	margin-top: 1.5em;
+}
+
+#label{
+  font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 30pt;
+}
